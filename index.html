@@ -1,310 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/materialize.min.css">
     <script src="js/materialize.min.js"></script>
 </head>
+
 <body>
-<header>
-    <nav>
-        <div class="nav-wrapper grey darken-4">
+    <header>
+        <nav>
+            <div class="nav-wrapper grey darken-4">
+                <div class="container">
+                    <a href="#" class="brand-logo center">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
             <div class="container">
-                <a href="#" class="brand-logo center">
-                    <img src="img/logo.png" alt="">
-                </a>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="sass.html">Каталог</a></li>
-                    <li><a href="badges.html">Отзывы</a></li>
-                    <li><a href="collapsible.html">FAQ</a></li>
-                </ul>
+                <div class="col s12 m4">
+                </div>
+                <div class="col s12 m8 header_content">
+                    <h1 class="title">Спортивная дорожная сумка Activity Bag</h1>
+                    <a href="#catalog" class="grey darken-4 btn">Каталог</a>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <div class="row">
+    </header>
+
+    <section id="star">
         <div class="container">
-            <div class="col s12 m4">
-            </div>
-            <div class="col s12 m8 header_content">
-                <h1 class="title">Спортивная дорожная сумка Activity Bag</h1>
-                <a href="#catalog" class="grey darken-4 btn">Каталог</a>
-            </div>
-        </div>
-    </div>
-
-</header>
-
-<section id="first_slider">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m6 ">
-                <div class="comfort_carousel carousel carousel-slider center t-35">
-                    <a class="carousel-item responsive-img" href="#one!"><img src="./img/star/1.jpg"></a>
-                    <a class="carousel-item responsive-img" href="#two!"><img src="./img/star/2.jpg"></a>
-                    <a class="carousel-item responsive-img" href="#three!"><img src="./img/star/3.jpg"></a>
-                    <a class="carousel-item responsive-img" href="#four!"><img src="./img/star/4.jpg"></a>
-                    <a class="carousel-item responsive-img" href="#five!"><img src="./img/star/5.jpg"></a>
-                    <a class="carousel-item responsive-img" href="#six!"><img src="./img/star/6.png"></a>
-                    <a class="carousel-item responsive-img" href="#seven!"><img src="./img/star/7.png"></a>
-                    <a class="carousel-item responsive-img" href="#eight!"><img src="./img/star/8.jpg"></a>
-                    <a class="carousel-item responsive-img" href="#nine!"><img src="./img/star/9.jpg"></a>
-                    <a class="carousel-item responsive-img" href="#ten!"><img src="./img/star/10.jpg"></a>
+            <div class="row">
+                <div class="col s12 m6 ">
+                    <div class="comfort_carousel carousel carousel-slider center t-35">
+                        <a class="carousel-item responsive-img" href="#one!"><img src="./img/star/1.jpg"></a>
+                        <a class="carousel-item responsive-img" href="#two!"><img src="./img/star/2.jpg"></a>
+                        <a class="carousel-item responsive-img" href="#three!"><img src="./img/star/3.jpg"></a>
+                        <a class="carousel-item responsive-img" href="#four!"><img src="./img/star/4.jpg"></a>
+                        <a class="carousel-item responsive-img" href="#five!"><img src="./img/star/5.jpg"></a>
+                        <a class="carousel-item responsive-img" href="#six!"><img src="./img/star/6.png"></a>
+                        <a class="carousel-item responsive-img" href="#seven!"><img src="./img/star/7.png"></a>
+                        <a class="carousel-item responsive-img" href="#eight!"><img src="./img/star/8.jpg"></a>
+                        <a class="carousel-item responsive-img" href="#nine!"><img src="./img/star/9.jpg"></a>
+                        <a class="carousel-item responsive-img" href="#ten!"><img src="./img/star/10.jpg"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col s12 m6">
-                <h3>Спортивная дорожная сумка Activity Bag</h3>
-                <div class="starList">
-                    <i class="fas fa-star starColor"></i>
-                    <i class="fas fa-star starColor"></i>
-                    <i class="fas fa-star starColor"></i>
-                    <i class="fas fa-star starColor"></i>
-                    <i class="fas fa-star starColor"></i>
-                    <span>(1258)</span>
-                </div>
-                <span>Спортивные дорожные сумки Activity Bag успели получить сотни восторженных отзывов. Activity
+                <div class="col s12 m6">
+                    <h3>Спортивная дорожная сумка Activity Bag</h3>
+                    <div class="starList">
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star starColor"></i>
+                        <span>(1258)</span>
+                    </div>
+                    <span>Спортивные дорожные сумки Activity Bag успели получить сотни восторженных отзывов. Activity
                         Bag создана с учетом Вашего образа жизни.</span>
-                <ul>
-                    <li><i class="far fa-check-circle fa-2x"></i><span>Изготовлена из высокопрочного водонепроницаемого
+                    <ul>
+                        <li><i class="far fa-check-circle fa-2x"></i><span>Изготовлена из высокопрочного водонепроницаемого
                                 материала.</span></li>
-                    <li><i class="far fa-check-circle fa-2x"></i><span>Простота в уходе: сумку достаточно протереть
+                        <li><i class="far fa-check-circle fa-2x"></i><span>Простота в уходе: сумку достаточно протереть
                                 влажной тряпкой.</span></li>
-                    <li><i class="far fa-check-circle fa-2x"></i><span>Легкая и удобная, имеет широкий ремень на плечо,
+                        <li><i class="far fa-check-circle fa-2x"></i><span>Легкая и удобная, имеет широкий ремень на плечо,
                                 регулируемый по длине.</span></li>
-                    <li><i class="far fa-check-circle fa-2x"></i>Экологически чистые, безопасные и качественные материалы.
-                    </li>
-                    <li><i class="far fa-check-circle fa-2x"></i>Невероятная вместительность и простота организации вещей
-                        внутри.</li>
-                    <li><i class="far fa-check-circle fa-2x"></i>Имеет влагоизолирущий отсек для влажных вещей, а также
-                        отсек для обуви.</li>
-                </ul>
-                <a class="grey darken-4 btn">Перейти в каталог</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="secondSlider">
-    <div class="container">
-        <div class="row">
-            <div class="col m6 s12">
-                <div class="carousel carouselComfort">
-                    <img src="img/comfort/1.png" href="#one!" alt="" class="carousel-item responsive-img">
-                    <img src="img/comfort/2.jpg" href="#two!" alt="" class="carousel-item responsive-img">
-                    <img src="img/comfort/3.jpg" href="#three!" alt="" class="carousel-item responsive-img">
-                    <img src="img/comfort/4.jpg" href="#four!" alt="" class="carousel-item responsive-img">
-                    <img src="img/comfort/5.png" href="#five!" alt="" class="carousel-item responsive-img">
-                    <img src="img/comfort/6.jpg" href="#six!" alt="" class="carousel-item responsive-img">
-                </div>
-            </div>
-
-            <div class="col m6 s12">
-                <h3 class="h3Comfort">Вам будет комфортно с "Activity Bag"!</h3>
-                <ul class="comfortUl">
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p> Отличная вместительность</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p>Больше не придется долго искать нужную вещь: 6 многофункциональных карманов.</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p>Раздельные карманы для сухих/чистых и влажных/загрязненных вещей, а также отсек для обуви обеспечат необходимую чистоту внутри сумки.</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p>Надежный влагоизолирующий карман оставит вещи в других отсеках сухими, даже если вы просто нальете в него воды.</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p>Вы можете носить сумку так, как Вам удобно: на плече, в руках, или за ручку на торце сумки.</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p> Возможность закрепить сумку на чемодане.</p>
-                    </li>
-                </ul>
-                <a class="buttonComfort" href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="secondSlider">
-    <div class="container">
-        <div class="row">
-
-            <div class="col m6 s12">
-                <h3 class="h3Comfort">Вам будет комфортно с "Activity Bag"!</h3>
-                <ul class="comfortUl">
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p> Отличная вместительность</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p>Больше не придется долго искать нужную вещь: 6 многофункциональных карманов.</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p>Раздельные карманы для сухих/чистых и влажных/загрязненных вещей, а также отсек для обуви обеспечат необходимую чистоту внутри сумки.</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p>Надежный влагоизолирующий карман оставит вещи в других отсеках сухими, даже если вы просто нальете в него воды.</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p>Вы можете носить сумку так, как Вам удобно: на плече, в руках, или за ручку на торце сумки.</p>
-                    </li>
-                    <li class="comfortLi">
-                        <i class="far fa-check-circle"></i>
-                        <p> Возможность закрепить сумку на чемодане.</p>
-                    </li>
-                </ul>
-                <a class="buttonComfort" href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
-            </div>
-
-            <div class="col m6 s12">
-                <div class="carousel carouselComfort">
-                    <img src="img/detail/1.png" href="#one!" alt="" class="carousel-item responsive-img">
-                    <img src="img/detail/2.png" href="#two!" alt="" class="carousel-item responsive-img">
-                    <img src="img/detail/3.jpg" href="#three!" alt="" class="carousel-item responsive-img">
-                    <img src="img/detail/4.jpg" href="#four!" alt="" class="carousel-item responsive-img">
-                    <img src="img/detail/5.jpg" href="#five!" alt="" class="carousel-item responsive-img">
-                    <img src="img/detail/6.jpg" href="#six!" alt="" class="carousel-item responsive-img">
+                        <li><i class="far fa-check-circle fa-2x"></i>Экологически чистые, безопасные и качественные материалы.
+                        </li>
+                        <li><i class="far fa-check-circle fa-2x"></i>Невероятная вместительность и простота организации вещей внутри.
+                        </li>
+                        <li><i class="far fa-check-circle fa-2x"></i>Имеет влагоизолирущий отсек для влажных вещей, а также отсек для обуви.</li>
+                    </ul>
+                    <a href="#catalog" class="grey darken-4 btn">Перейти в каталог</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<div class="container">
-    <div class="row">
-        <div class="client_review">
-            <h2 class="head_text">Отзывы клиентов</h2>
-            <h3 class="head_text_desr">3980+ довольных покупателей</h3>
-        </div>
 
-        <div class="carousel carousel-slider center carousel-slider-heigth">
+    <section id="catalog">
+        <h2 class="head_text">Каталог</h2>
+        <div class="container">
+            <div class="row">
 
-            <div class="carousel-item grey darken-3 white-text carousel_padding" href="#one!">
-                <img class="responsive-img small_img circle" src="./img/review/1.jpeg" alt="">
-                <h4 class="white-text">Мария Н.</h4>
-                <p class="white-text">Ростов-на-Дону</p>
-                <p class="white-text">Сумка супер! Как на фотках. В Ростов-на-Дону доставили почтой РФ достаточно быстро. Очень вместительная и удобная, спасибо!</p>
-            </div>
-            <div class="carousel-item grey darken-3 white-text carousel_padding" href="#two!">
-                <img class="responsive-img small_img circle" src="./img/review/2.jpeg" alt="">
-                <h4 class="white-text">Мария Н.</h4>
-                <p class="white-text">Ростов-на-Дону</p>
-                <p class="white-text">Сумка супер! Как на фотках. В Ростов-на-Дону доставили почтой РФ достаточно быстро. Очень вместительная и удобная, спасибо!</p>
-            </div>
-            <div class="carousel-item grey darken-3 white-text carousel_padding" href="#three!">
-                <img class="responsive-img small_img circle" src="./img/review/3.jpeg" alt="">
-                <h4 class="white-text">Мария Н.</h4>
-                <p class="white-text">Ростов-на-Дону</p>
-                <p class="white-text">Сумка супер! Как на фотках. В Ростов-на-Дону доставили почтой РФ достаточно быстро. Очень вместительная и удобная, спасибо!</p>
-            </div>
-            <div class="carousel-item grey darken-3 white-text carousel_padding" href="#four!">
-                <img class="responsive-img small_img circle" src="./img/review/4.jpeg" alt="">
-                <h4 class="white-text">Мария Н.</h4>
-                <p class="white-text">Ростов-на-Дону</p>
-                <p class="white-text">Сумка супер! Как на фотках. В Ростов-на-Дону доставили почтой РФ достаточно быстро. Очень вместительная и удобная, спасибо!</p>
-            </div>
-        </div>
-    </div>
-    <div class="client_questions">
-        <h2 class="head_text">Часто задаваемые вопросы</h2>
-        <h3 class="head_text_desr">Здесь есть все ответы</h3>
-    </div>
-    <ul class="collapsible">
-        <li>
-            <div class="collapsible-header">Где я могу купить сумку Activity Bag?</div>
-            <div class="collapsible-body"><span>Сумки Activity Bag в России продаются только в нашем официальном онлайн-магазине. Поэтому мы можем предложить лучшую цену - без наценок посредников и розничных сетей. Остерегайтесь подделок: каждая сумка отличается высоким качеством.
-                </span></div>
-        </li>
-        <li>
-            <div class="collapsible-header">Что насчет доставки и возврата?
-            </div>
-            <div class="collapsible-body"><span>Мы предлагаем быструю доставку по всей России. Наши специалисты всегда проверяют товар перед отправкой, что гарантирует 100% качество. Гарантия на товар - 1 год.
-                </span></div>
-        </li>
-        <li>
-            <div class="collapsible-header">Если я отправлю деньги, а мне ничего не придет?
-            </div>
-            <div class="collapsible-body"><span>ОСТЕРЕГАЙТЕСЬ МОШЕННИКОВ! Мы не берем предоплат! Вы оплачиваете стоимость заказа только ПРИ ПОЛУЧЕНИИ товара на почте!
-                </span></div>
-        </li>
-    </ul>
-    <div class="secure_policy">
-        <h2 class="head_text">Политика безопасности клиента</h2>
-        <h3 class="head_text_desr" style="text-align: center;">Мы заботимся о наших клиентах, минимизируя все возможные риски</h3>
-    </div>
-    <div class="row">
-        <div class="col s12 m3">
-            <div class="secure_card">
-                <i class="fas fa-people-carry fa-3x"></i>
-                <h5>Быстрая и безопасная доставка</h5>
-                <p> <span class="secure_descr_bold"> Мы не берем предоплат!</span> Мы осуществляем быструю доставку почтой России по всей территории РФ.</p>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="secure_card">
-                <i class="fas fa-people-carry fa-3x"></i>
-                <h5>Быстрая и безопасная доставка</h5>
-                <p> <span class="secure_descr_bold"> Мы не берем предоплат!</span> Мы осуществляем быструю доставку почтой России по всей территории РФ.</p>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="secure_card">
-                <i class="fas fa-people-carry fa-3x"></i>
-                <h5>Быстрая и безопасная доставка</h5>
-                <p> <span class="secure_descr_bold"> Мы не берем предоплат!</span> Мы осуществляем быструю доставку почтой России по всей территории РФ.</p>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="secure_card">
-                <i class="fas fa-people-carry fa-3x"></i>
-                <h5>Быстрая и безопасная доставка</h5>
-                <p> <span class="secure_descr_bold"> Мы не берем предоплат!</span> Мы осуществляем быструю доставку почтой России по всей территории РФ.</p>
-                <div class="row">
-                    <div class="col s2 warning">
-                        !
+
+                <div class="col s12 m4 product_slider">
+                    <div class="awq">
+                        <div class="carousel">
+                            <img class="carousel-item product_img" href="#one!" src="img/catalog/1/1.jpg" alt="product">
+                            <img class="carousel-item" href="#two!" src="img/catalog/1/2.jpg" alt="product">
+                            <img class="carousel-item" href="#three!" src="img/catalog/1/3.jpg" alt="product">
+                            <img class="carousel-item" href="#four!" src="img/catalog/1/4.jpg" alt="product">
+                        </div>
                     </div>
-                    <div class="col s10 warning_descr">
-                        <p><span class="secure_descr_bold">Будьте бдительны:</span>в связи с участившимися случаями копирования, существует риск мошенничества и покупки некачественного товара по более низкой цене.</p>
+                    <div class="product_description">
+                        <h4 class="product_title">
+                            Сумка Activity Bag<br>Розовая
+                        </h4>
+                        <div class="articul">Артикул: 0001</div>
+                        <div class="product_material">Материал: высокопрочная ткань оксфорд
+                        </div>
+                        <div class="product_color">
+                            Цвет: Розовый
+                        </div>
+                        <div class="product_size">Размер: 50х24х26 cm
+                        </div>
+                        <div class="product_price">
+                            <div class="price_old">3980 руб.</div>
+                            <div class="price_new">1990 руб.</div>
+                        </div>
+                        <a class="order grey darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">КУПИТЬ</a>
                     </div>
+                </div>
 
+
+                <div class="col s12 m4 product_slider">
+                    <div class="carousel">
+                        <img class="carousel-item product_img" href="#one!" src="img/catalog/2/1.jpg" alt="product">
+                        <img class="carousel-item" href="#two!" src="img/catalog/2/2.jpg" alt="product">
+                        <img class="carousel-item" href="#three!" src="img/catalog/2/3.jpg" alt="product">
+                        <img class="carousel-item" href="#four!" src="img/catalog/2/4.jpg" alt="product">
+                        <img class="carousel-item" href="#five!" src="img/catalog/2/5.jpg" alt="product">
+                        <img class="carousel-item" href="#six!" src="img/catalog/2/6.jpg" alt="product">
+                        <img class="carousel-item" href="#seven!" src="img/catalog/2/7.jpg" alt="product">
+                        <img class="carousel-item" href="#eight!" src="img/catalog/2/8.jpg" alt="product">
+                    </div>
+                    <div class="product_description">
+                        <h4 class="product_title">
+                            Сумка Activity Bag<br>Сиреневая
+                        </h4>
+                        <div class="articul">Артикул: 0002</div>
+                        <div class="product_material">Материал: высокопрочная ткань оксфорд
+                        </div>
+                        <div class="product_color">
+                            Цвет: Сиреневый
+                        </div>
+                        <div class="product_size">Размер: 50х24х26 cm
+                        </div>
+                        <div class="product_price">
+                            <div class="price_old">3980 руб.</div>
+                            <div class="price_new">1990 руб.</div>
+                        </div>
+                        <a class="order grey darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">КУПИТЬ</a>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m4 product_slider">
+                    <div class="carousel">
+                        <img class="carousel-item product_img" href="#one!" src="img/catalog/3/1.jpg" alt="product">
+                        <img class="carousel-item" href="#two!" src="img/catalog/3/2.jpg" alt="product">
+                        <img class="carousel-item" href="#three!" src="img/catalog/3/3.jpg" alt="product">
+                        <img class="carousel-item" href="#four!" src="img/catalog/3/4.jpg" alt="product">
+                        <img class="carousel-item" href="#five!" src="img/catalog/3/5.jpg" alt="product">
+                        <img class="carousel-item" href="#six!" src="img/catalog/3/6.jpg" alt="product">
+                        <img class="carousel-item" href="#seven!" src="img/catalog/3/7.jpg" alt="product">
+                        <img class="carousel-item" href="#eight!" src="img/catalog/3/8.jpg" alt="product">
+                        <img class="carousel-item" href="#nine!" src="img/catalog/3/9.jpg" alt="product">
+                    </div>
+                    <div class="product_description">
+                        <h4 class="product_title">
+                            Сумка Activity Bag<br>Серая
+                        </h4>
+                        <div class="articul">Артикул: 0003</div>
+                        <div class="product_material">Материал: высокопрочная ткань оксфорд
+                        </div>
+                        <div class="product_color">
+                            Цвет: Серый
+                        </div>
+                        <div class="product_size">Размер: 50х24х26 cm
+                        </div>
+                        <div class="product_price">
+                            <div class="price_old">3980 руб.</div>
+                            <div class="price_new">1990 руб.</div>
+                        </div>
+                        <a class="order grey darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">КУПИТЬ</a>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m4 product_slider">
+                    <div class="carousel">
+                        <img class="carousel-item product_img" href="#one!" src="img/catalog/4/1.jpg" alt="product">
+                        <img class="carousel-item" href="#two!" src="img/catalog/4/2.jpg" alt="product">
+                        <img class="carousel-item" href="#three!" src="img/catalog/4/3.jpg" alt="product">
+                        <img class="carousel-item" href="#four!" src="img/catalog/4/4.jpg" alt="product">
+                        <img class="carousel-item" href="#five!" src="img/catalog/4/5.jpg" alt="product">
+                        <img class="carousel-item" href="#six!" src="img/catalog/4/6.jpg" alt="product">
+                        <img class="carousel-item" href="#seven!" src="img/catalog/4/7.jpg" alt="product">
+                    </div>
+                    <div class="product_description">
+                        <h4 class="product_title">
+                            Сумка Activity Bag<br>Бордовая
+                        </h4>
+                        <div class="articul">Артикул: 0004</div>
+                        <div class="product_material">Материал: высокопрочная ткань оксфорд
+                        </div>
+                        <div class="product_color">
+                            Цвет: Бордовый
+                        </div>
+                        <div class="product_size">Размер: 50х24х26 cm
+                        </div>
+                        <div class="product_price">
+                            <div class="price_old">3980 руб.</div>
+                            <div class="price_new">1990 руб.</div>
+                        </div>
+                        <a class="order grey darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">КУПИТЬ</a>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m4 product_slider">
+                    <div class="carousel">
+                        <img class="carousel-item product_img" href="#one!" src="img/catalog/5/1.jpg" alt="product">
+                        <img class="carousel-item" href="#two!" src="img/catalog/5/2.jpg" alt="product">
+                        <img class="carousel-item" href="#three!" src="img/catalog/5/3.jpg" alt="product">
+                        <img class="carousel-item" href="#four!" src="img/catalog/5/4.jpg" alt="product">
+                        <img class="carousel-item" href="#five!" src="img/catalog/5/5.jpg" alt="product">
+                        <img class="carousel-item" href="#six!" src="img/catalog/5/6.jpg" alt="product">
+                    </div>
+                    <div class="product_description">
+                        <h4 class="product_title">
+                            Сумка Activity Bag<br>Фуксия
+                        </h4>
+                        <div class="articul">Артикул: 0005</div>
+                        <div class="product_material">Материал: высокопрочная ткань оксфорд
+                        </div>
+                        <div class="product_color">
+                            Цвет: Фуксия
+                        </div>
+                        <div class="product_size">Размер: 50х24х26 cm
+                        </div>
+                        <div class="product_price">
+                            <div class="price_old">3980 руб.</div>
+                            <div class="price_new">1990 руб.</div>
+                        </div>
+                        <a class="order grey darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">КУПИТЬ</a>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m4 product_slider">
+                    <div class="carousel">
+                        <img class="carousel-item product_img" href="#one!" src="img/catalog/6/1.jpg" alt="product">
+                        <img class="carousel-item" href="#two!" src="img/catalog/6/2.jpg" alt="product">
+                        <img class="carousel-item" href="#three!" src="img/catalog/6/3.jpg" alt="product">
+                        <img class="carousel-item" href="#four!" src="img/catalog/6/4.jpg" alt="product">
+                        <img class="carousel-item" href="#five!" src="img/catalog/6/5.jpg" alt="product">
+                        <img class="carousel-item" href="#six!" src="img/catalog/6/6.jpg" alt="product">
+                    </div>
+                    <div class="product_description">
+                        <h4 class="product_title">
+                            Сумка Activity Bag<br>Синяя
+                        </h4>
+                        <div class="articul">Артикул: 0006</div>
+                        <div class="product_material">Материал: высокопрочная ткань оксфорд
+                        </div>
+                        <div class="product_color">
+                            Цвет: Синий
+                        </div>
+                        <div class="product_size">Размер: 50х24х26 cm
+                        </div>
+                        <div class="product_price">
+                            <div class="price_old">3980 руб.</div>
+                            <div class="price_new">1990 руб.</div>
+                        </div>
+                        <a class="order grey darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">КУПИТЬ</a>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m4 product_slider">
+                    <div class="carousel">
+                        <img class="carousel-item product_img" href="#one!" src="img/catalog/7/1.jpg" alt="product">
+                        <img class="carousel-item" href="#two!" src="img/catalog/7/2.jpg" alt="product">
+                        <img class="carousel-item" href="#three!" src="img/catalog/7/3.jpg" alt="product">
+                        <img class="carousel-item" href="#four!" src="img/catalog/7/4.jpg" alt="product">
+                        <img class="carousel-item" href="#five!" src="img/catalog/7/5.jpg" alt="product">
+                        <img class="carousel-item" href="#six!" src="img/catalog/7/6.jpg" alt="product">
+                        <img class="carousel-item" href="#seven!" src="img/catalog/7/7.jpg" alt="product">
+                    </div>
+                    <div class="product_description">
+                        <h4 class="product_title">
+                            Сумка Activity Bag<br>Чёрная
+                        </h4>
+                        <div class="articul">Артикул: 0007</div>
+                        <div class="product_material">Материал: высокопрочная ткань оксфорд
+                        </div>
+                        <div class="product_color">
+                            Цвет: Чёрный
+                        </div>
+                        <div class="product_size">Размер: 50х24х26 cm
+                        </div>
+                        <div class="product_price">
+                            <div class="price_old">3980 руб.</div>
+                            <div class="price_new">1990 руб.</div>
+                        </div>
+                        <a class="order grey darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">КУПИТЬ</a>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m4 product_slider">
+                    <div class="carousel">
+                        <img class="carousel-item product_img" href="#one!" src="img/catalog/8/1.jpg" alt="product">
+                        <img class="carousel-item" href="#two!" src="img/catalog/8/2.jpg" alt="product">
+                        <img class="carousel-item" href="#three!" src="img/catalog/8/3.jpg" alt="product">
+                        <img class="carousel-item" href="#four!" src="img/catalog/8/4.jpg" alt="product">
+                        <img class="carousel-item" href="#five!" src="img/catalog/8/5.jpg" alt="product">
+                        <img class="carousel-item" href="#six!" src="img/catalog/8/6.jpg" alt="product">
+                        <img class="carousel-item" href="#seven!" src="img/catalog/8/7.jpg" alt="product">
+                    </div>
+                    <div class="product_description">
+                        <h4 class="product_title">
+                            Сумка Activity Bag<br>Мятная
+                        </h4>
+                        <div class="articul">Артикул: 0008</div>
+                        <div class="product_material">Материал: высокопрочная ткань оксфорд
+                        </div>
+                        <div class="product_color">
+                            Цвет: Мятный
+                        </div>
+                        <div class="product_size">Размер: 50х24х26 cm
+                        </div>
+                        <div class="product_price">
+                            <div class="price_old">3980 руб.</div>
+                            <div class="price_new">1990 руб.</div>
+                        </div>
+                        <a class="order grey darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">КУПИТЬ</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="comfort">
+        <div class="container">
+            <div class="row">
+                <div class="col m6 s12">
+                    <div class="carousel carouselComfort">
+                        <img src="img/comfort/1.png" href="#one!" alt="" class="carousel-item responsive-img">
+                        <img src="img/comfort/2.jpg" href="#two!" alt="" class="carousel-item responsive-img">
+                        <img src="img/comfort/3.jpg" href="#three!" alt="" class="carousel-item responsive-img">
+                        <img src="img/comfort/4.jpg" href="#four!" alt="" class="carousel-item responsive-img">
+                        <img src="img/comfort/5.png" href="#five!" alt="" class="carousel-item responsive-img">
+                        <img src="img/comfort/6.jpg" href="#six!" alt="" class="carousel-item responsive-img">
+                    </div>
+                </div>
+
+                <div class="col m6 s12">
+                    <h3 class="h3Comfort">Вам будет комфортно с "Activity Bag"!</h3>
+                    <ul class="comfortUl">
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p> Отличная вместительность</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p>Больше не придется долго искать нужную вещь: 6 многофункциональных карманов.</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p>Раздельные карманы для сухих/чистых и влажных/загрязненных вещей, а также отсек для обуви обеспечат необходимую чистоту внутри сумки.</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p>Надежный влагоизолирующий карман оставит вещи в других отсеках сухими, даже если вы просто нальете в него воды.</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p>Вы можете носить сумку так, как Вам удобно: на плече, в руках, или за ручку на торце сумки.</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p> Возможность закрепить сумку на чемодане.</p>
+                        </li>
+                    </ul>
+                    <a class="buttonComfort" href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="detail">
+        <div class="container">
+            <div class="row">
+
+                <div class="col m6 s12">
+                    <h3 class="h3Comfort">Вам будет комфортно с "Activity Bag"!</h3>
+                    <ul class="comfortUl">
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p> Отличная вместительность</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p>Больше не придется долго искать нужную вещь: 6 многофункциональных карманов.</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p>Раздельные карманы для сухих/чистых и влажных/загрязненных вещей, а также отсек для обуви обеспечат необходимую чистоту внутри сумки.</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p>Надежный влагоизолирующий карман оставит вещи в других отсеках сухими, даже если вы просто нальете в него воды.</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p>Вы можете носить сумку так, как Вам удобно: на плече, в руках, или за ручку на торце сумки.</p>
+                        </li>
+                        <li class="comfortLi">
+                            <i class="far fa-check-circle"></i>
+                            <p> Возможность закрепить сумку на чемодане.</p>
+                        </li>
+                    </ul>
+                    <a class="buttonComfort" href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
+                </div>
+
+                <div class="col m6 s12">
+                    <div class="carousel carouselComfort">
+                        <img src="img/detail/1.png" href="#one!" alt="" class="carousel-item responsive-img">
+                        <img src="img/detail/2.png" href="#two!" alt="" class="carousel-item responsive-img">
+                        <img src="img/detail/3.jpg" href="#three!" alt="" class="carousel-item responsive-img">
+                        <img src="img/detail/4.jpg" href="#four!" alt="" class="carousel-item responsive-img">
+                        <img src="img/detail/5.jpg" href="#five!" alt="" class="carousel-item responsive-img">
+                        <img src="img/detail/6.jpg" href="#six!" alt="" class="carousel-item responsive-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="client_review">
+                    <h2 class="head_text">Отзывы клиентов</h2>
+                    <h3 class="head_text_desr">3980+ довольных покупателей</h3>
+                </div>
+
+                <div class="carousel carousel-slider center carousel-slider-heigth">
+
+                    <div class="carousel-item grey darken-3 white-text carousel_padding" href="#one!">
+                        <img class="responsive-img small_img circle" src="./img/review/1.jpeg" alt="">
+                        <h4 class="white-text">Мария Н.</h4>
+                        <p class="white-text">Ростов-на-Дону</p>
+                        <p class="white-text">Сумка супер! Как на фотках. В Ростов-на-Дону доставили почтой РФ достаточно быстро. Очень вместительная и удобная, спасибо!</p>
+                    </div>
+                    <div class="carousel-item grey darken-3 white-text carousel_padding" href="#two!">
+                        <img class="responsive-img small_img circle" src="./img/review/2.jpeg" alt="">
+                        <h4 class="white-text">Мария Н.</h4>
+                        <p class="white-text">Ростов-на-Дону</p>
+                        <p class="white-text">Сумка супер! Как на фотках. В Ростов-на-Дону доставили почтой РФ достаточно быстро. Очень вместительная и удобная, спасибо!</p>
+                    </div>
+                    <div class="carousel-item grey darken-3 white-text carousel_padding" href="#three!">
+                        <img class="responsive-img small_img circle" src="./img/review/3.jpeg" alt="">
+                        <h4 class="white-text">Мария Н.</h4>
+                        <p class="white-text">Ростов-на-Дону</p>
+                        <p class="white-text">Сумка супер! Как на фотках. В Ростов-на-Дону доставили почтой РФ достаточно быстро. Очень вместительная и удобная, спасибо!</p>
+                    </div>
+                    <div class="carousel-item grey darken-3 white-text carousel_padding" href="#four!">
+                        <img class="responsive-img small_img circle" src="./img/review/4.jpeg" alt="">
+                        <h4 class="white-text">Мария Н.</h4>
+                        <p class="white-text">Ростов-на-Дону</p>
+                        <p class="white-text">Сумка супер! Как на фотках. В Ростов-на-Дону доставили почтой РФ достаточно быстро. Очень вместительная и удобная, спасибо!</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="faq">
+        <div class="container">
+            <div class="client_questions">
+                <h2 class="head_text">Часто задаваемые вопросы</h2>
+                <h3 class="head_text_desr">Здесь есть все ответы</h3>
+            </div>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">Где я могу купить сумку Activity Bag?</div>
+                    <div class="collapsible-body"><span>Сумки Activity Bag в России продаются только в нашем официальном онлайн-магазине. Поэтому мы можем предложить лучшую цену - без наценок посредников и розничных сетей. Остерегайтесь подделок: каждая сумка отличается высоким качеством.
+                </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Что насчет доставки и возврата?
+                    </div>
+                    <div class="collapsible-body"><span>Мы предлагаем быструю доставку по всей России. Наши специалисты всегда проверяют товар перед отправкой, что гарантирует 100% качество. Гарантия на товар - 1 год.
+                </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Если я отправлю деньги, а мне ничего не придет?
+                    </div>
+                    <div class="collapsible-body"><span>ОСТЕРЕГАЙТЕСЬ МОШЕННИКОВ! Мы не берем предоплат! Вы оплачиваете стоимость заказа только ПРИ ПОЛУЧЕНИИ товара на почте!
+                </span></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="secure">
+        <div class="container">
+            <div class="secure_policy">
+                <h2 class="head_text">Политика безопасности клиента</h2>
+                <h3 class="head_text_desr" style="text-align: center;">Мы заботимся о наших клиентах, минимизируя все возможные риски</h3>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="secure_card">
+                        <i class="fas fa-people-carry fa-3x"></i>
+                        <h5>Быстрая и безопасная доставка</h5>
+                        <p> <span class="secure_descr_bold"> Мы не берем предоплат!</span> Мы осуществляем быструю доставку почтой по всей территории.</p>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="secure_card">
+                        <i class="fas fa-undo-alt fa-3x"></i>
+                        <h5>Гарантия возврата</h5>
+                        <p>Мы не берем предоплат! Мы гарантируем <span class="secure_descr_bold">полный возврат денег</span> (или замену товара) в случае обнаружения заводского брака в течение 14 дней после покупки.</p>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="secure_card">
+                        <i class="fas fa-money-check-alt fa-3x"></i>
+                        <h5>Безопасная оплата</h5>
+                        <p> <span class="secure_descr_bold"> Мы не берем предоплат!</span> Стоимость заказа оплачивается только ПРИ ПОЛУЧЕНИИ на почте.</p>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="secure_card">
+                        <i class="fas fa-wallet fa-3x"></i>
+                        <h5>Полезные продукты</h5>
+                        <p> <span class="secure_descr_bold">Мы поставляем только оригинальную продукцию напрямую с завода.</span></p>
+                        <div class="row">
+                            <div class="col s2 warning">
+                                !
+                            </div>
+                            <div class="col s10 warning_descr">
+                                <p><span class="secure_descr_bold">Будьте бдительны:</span>в связи с участившимися случаями копирования, существует риск мошенничества и покупки некачественного товара по более низкой цене.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer grey darken-4">
+            <p class="white-text">OOO "ПРАЙМ ТРЕЙД" ОГРН: 5187746026969 ИНН: 9725001008 КПП: 772501001 <br>115093, г. Москва, Партийный переулок, д. 1, к. 58, офис 11
+
+            </p>
+            <p class="white-text">
+                <a href="">+7(095)1716699 </a> |
+                <a href="https://www.google.com/intl/ru/gmail/about/">info@MagnetFix.com</a>
+
+            </p>
+            <p class="white-text">
+                <a href="https://activity-bag.deliverygoods.ru/ru/1/policy.html">Политика конфиденциальности</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+
+        </div>
     </div>
-</div>
-<div class="footer grey darken-4
-    ">
-    <p class="white-text">OOO "ПРАЙМ ТРЕЙД" ОГРН: 5187746026969 ИНН: 9725001008 КПП: 772501001 <br>115093, г. Москва, Партийный переулок, д. 1, к. 58, офис 11
 
-    </p>
-    <p class="white-text">
-        <a href="">+7(095)1716699 </a> |
-        <a href="https://www.google.com/intl/ru/gmail/about/">info@MagnetFix.com</a>
 
-    </p>
-    <p class="white-text">
-        <a href="https://activity-bag.deliverygoods.ru/ru/1/policy.html">Политика конфиденциальности</a>
-    </p>
-</div>
 
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
